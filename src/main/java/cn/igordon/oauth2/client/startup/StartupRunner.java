@@ -8,13 +8,13 @@ import org.springframework.stereotype.Component;
 
 @RequiredArgsConstructor
 @Component
-public class StartupRunner implements  ApplicationRunner {
+public class StartupRunner implements ApplicationRunner {
 
     private final PasswordEncoder passwordEncoder;
 
     @Override
     public void run(ApplicationArguments args) throws Exception {
-        System.out.println(passwordEncoder.encode("test"));
-        System.out.println(passwordEncoder.encode("index"));
+        // System.out.println(passwordEncoder.encode("test"));
+        // System.out.println(passwordEncoder.encode("index"));
     }
 }

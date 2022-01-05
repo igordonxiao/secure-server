@@ -1,0 +1,15 @@
+spring:
+  redis:
+    database: 9
+    host: {IP}
+    port: 6379
+    password:
+    timeout: 60000
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://{IP}:3306/secure-server?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+    username:
+    password:
+
+logging.level.org.springframework.security: DEBUG
